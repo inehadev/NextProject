@@ -8,6 +8,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { UsersRound } from 'lucide-react';
 import { MessageCircle } from 'lucide-react';
 import { Headset } from 'lucide-react';
+import { LayoutGrid } from 'lucide-react';
+import { Users } from 'lucide-react';
 
 
 export default function Home() {
@@ -22,12 +24,23 @@ export default function Home() {
 
   return (
     <div className="flex ">
-      <div className='w-[100px] h-[900px]  bg-rose-50 '>helo</div>
+      <div className='flex'>
+      <div className='w-[100px] h-[900px]   '>
+      <FaComments className="text-xl text-gray-800 m-5 size-8" />
+      <div className='text-gray-600 mt-8 gap-2'>
+        <LayoutGrid  className='m-6 '/>
+      <MessageCircle className='m-6 '/>
+      <Users className='m-6 ' />
+      </div>
+      </div>
+      <div className='w-[0.5px] h-full bg-gray-500'></div>
+      
+      </div>
 
       <div className="h-14 w-full">
         <div className="flex justify-between items-center px-4 h-full">
           <div className='flex '>
-            <FaComments className="text-xl text-blue-600" />
+           
             <span className='text-black mx-3'>Chatbot</span>
           </div>
           <div>
@@ -166,6 +179,8 @@ export default function Home() {
               </div>
             </div>
             </div>
+
+            <ChevronDown  className='text-black mx-[50%] mt-5'/>
 
           
       </div>
